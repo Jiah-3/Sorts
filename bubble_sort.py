@@ -33,20 +33,20 @@ count=2000 elapsed=1.794
 count=3000 elapsed=4.001
 count=4000 elapsed=7.062
 
-* Visualizer 코드를 완전히 제거했을 때
-count=100 elapsed=0.001
-count=1000 elapsed=0.094
-count=2000 elapsed=0.375
-count=3000 elapsed=0.827
-count=4000 elapsed=1.552
-count=5000 elapsed=2.413
-count=6000 elapsed=3.427
-count=7000 elapsed=4.731
-count=8000 elapsed=5.967
-count=9000 elapsed=7.760
-count=10000 elapsed=9.621
-count=15000 elapsed=21.400
-count=20000 elapsed=39.334
+* Visualizer 코드를 완전히 제거했을 때(python 3.13)
+count=100 elapsed=0.000
+count=1000 elapsed=0.057
+count=2000 elapsed=0.246
+count=3000 elapsed=0.488
+count=4000 elapsed=0.836
+count=5000 elapsed=1.354
+count=6000 elapsed=2.247
+count=7000 elapsed=3.080
+count=8000 elapsed=4.021
+count=9000 elapsed=4.681
+count=10000 elapsed=5.701
+count=15000 elapsed=12.699
+count=20000 elapsed=35.784
 '''
 
 if __name__ =='__main__':
