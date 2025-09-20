@@ -49,25 +49,23 @@ def main():
     print(f'{count=} first_gap={gap}')
     while True:
         vis.set_gap(gap)
-        for offset in range(gap):
-            start = offset + gap
-            while start < count:
-                vis.mark_end(start, True)
-                v = array[start]
-                i = start
-                while i >= gap:
-                    vis.compare(i - gap, i)
-                    if array[i - gap] > v:
-                        vis.shift(i - gap, i)
-                        array[i] = array[i - gap]
-                        vis.draw()
-                        i -= gap
-                    else:
-                        break
-                vis.shift(start, i, True)
-                array[i] = v
-                vis.draw()
-                start += gap
+        for start in range(gap, count):
+            vis.mark_end(start, True)
+            v = array[start]
+            i = start
+            while i >= gap:
+                vis.compare(i - gap, i)
+                if array[i - gap] > v:
+                    vis.shift(i - gap, i)
+                    array[i] = array[i - gap]
+                    vis.draw()
+                    i -= gap
+                else:
+                    break
+            vis.shift(start, i, True)
+            array[i] = v
+            vis.draw()
+            start += gap
         gap = next_gap(gap)
         if gap < 1: break
 
