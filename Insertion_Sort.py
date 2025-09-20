@@ -40,16 +40,23 @@ def main():
     count = len(array)
 
     for i in range(1, count):
-        vis.mark_end(i)
-        for j in range(i, 0, -1):
+        vis.mark_end(i, True)
+        v = array[i]
+        j = i
+        while j > 0:
             vis.compare(j-1, j)
-            if array[j-1] > array[j]:
-                vis.swap(j-1, j)
-                array[j-1], array[j] = array[j], array[j-1]
+            if array[j - 1] > v:
+                vis.shift(j - 1, j)
+                array[j] = array[j - 1]
+                vis.draw()
+                j -= 1
             else:
                 break
+        vis.shift(i, j, True)
+        array[j] = v
+        vis.draw()
 
-    print('after :', array)
+    vis.draw()
 
 if __name__ == '__main__':
   seed('Hello') # 'Hello'를 seed로 고정하여 randint가 항상 같은 결과가 나오게 한다
