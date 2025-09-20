@@ -1,5 +1,6 @@
+from data_nearly_sorted_a_lot import nearly as numbers
 #from data_unsorted import numbers
-from data_unsorted_a_lot import numbers
+#from data_unsorted_a_lot import numbers
 from random import randint, seed, shuffle
 #from pyvisalgo import InsertionSortVisualizer as Visualizer
 # from pyvisalgo import Dummy as Visualizer
@@ -88,11 +89,11 @@ if __name__ == '__main__':
     counts = [100, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 15000, 20000, 30000, 40000, 50000]
     for count in counts:
         array = numbers[:count]
-        shuffle(array)
+        #shuffle(array)
         startedOn = time()
         main()
         elapsed = time() - startedOn
-        print(f'{count=} {elapsed=:.3f}')
+        print(f'{count=:5d} {elapsed=:7.3f}')
     exit(0)
 
     while True:
