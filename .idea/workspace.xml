@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7741b2f-801c-4357-98eb-2523e204dea0" name="Changes" comment="data_unsorted, data_unsorted_a_lot 생성">
+      <change afterPath="$PROJECT_DIR$/Shell_sort.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Insertion_Sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Insertion_Sort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Selection_Sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selection_Sort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bubble_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/bubble_sort.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +36,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.Insertion_Sort.executor": "Run",
     "Python.Selection_Sort.executor": "Run",
+    "Python.Shell_sort.executor": "Run",
     "Python.bubble_sort.executor": "Run",
     "Python.data_nearly_sorted_a_lot.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
