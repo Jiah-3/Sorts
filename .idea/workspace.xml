@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7741b2f-801c-4357-98eb-2523e204dea0" name="Changes" comment="data_unsorted, data_unsorted_a_lot 생성">
-      <change afterPath="$PROJECT_DIR$/Count_Sort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Count_Sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Count_Sort.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +33,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.Count_Sort.executor": "Run",
     "Python.Heap_Sort.executor": "Run",
     "Python.Insertion_Sort.executor": "Run",
     "Python.Selection_Sort.executor": "Run",
@@ -46,7 +46,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/kimch/OneDrive/바탕 화면/2DGP/Sorts",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="SharedIndexes">
