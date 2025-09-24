@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7741b2f-801c-4357-98eb-2523e204dea0" name="Changes" comment="data_unsorted, data_unsorted_a_lot 생성">
-      <change afterPath="$PROJECT_DIR$/Radix_Sort_LSD.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Radix_Sort_LSD.py" beforeDir="false" afterPath="$PROJECT_DIR$/Radix_Sort_LSD.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +37,7 @@
     "Python.Count_Sort.executor": "Run",
     "Python.Heap_Sort.executor": "Run",
     "Python.Insertion_Sort.executor": "Run",
+    "Python.Radix_Sort_LSD.executor": "Run",
     "Python.Selection_Sort.executor": "Run",
     "Python.Shell_sort.executor": "Run",
     "Python.bubble_sort.executor": "Run",
