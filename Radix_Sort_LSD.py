@@ -74,13 +74,22 @@ count=200000 elapsed=0.497
 count=300000 elapsed=0.888
 count=400000 elapsed=1.185
 count=500000 elapsed=1.574
+count=1000000 elapsed=2.815
+count=2000000 elapsed=7.813
+count=3000000 elapsed=11.341
+count=4000000 elapsed=14.626
+count=5000000 elapsed=20.483
+count=10000000 elapsed=47.878
 '''
 if __name__=='__main__':
     seed('HelloCountSort')
-    counts = [100, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 15000, 20000, 30000, 40000, 50000, 100000, 200000, 300000, 400000, 500000]
+    counts = [1000000, 2000000, 3000000, 4000000, 5000000, 10000000]
     for count in counts:
-        array = numbers[:count]
-        shuffle(array)
+        startedOn = time()
+        array = list(map(lambda x: randint(1, count), range(count)))
+        elapsed = time() - startedOn
+        print(f'Creating List: {count=:<6d} {elapsed=:.3f}')
+        #shuffle(array)
         #print(f'before:', array)
         startedOn = time()
         main()
