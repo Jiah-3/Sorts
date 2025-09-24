@@ -27,14 +27,13 @@ def main():
     vis.build_tree()
 
     last_parent_index = count // 2 - 1
-    if True:
-        n = last_parent_index
+    for n in range(last_parent_index, last_parent_index - 2, -1):
         vis.set_root(n)
         heapify(n, count)
 
     print('after', array)
 
-    
+
 if __name__=='__main__':
     seed('Hello')
     vis = Visualizer('Heap Sort')
