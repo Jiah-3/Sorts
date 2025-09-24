@@ -1,6 +1,6 @@
 #from data_unsorted import numbers
 from data_unsorted_a_lot import numbers
-#from pyvisalgo import RadixSortLsdVisualizer as Visualizer
+from pyvisalgo import RadixSortLsdVisualizer as Visualizer
 #pyvisalgo import Dummy as Visualizer
 from time import time
 from random import randint, seed, shuffle
@@ -8,13 +8,13 @@ from math import log10, ceil
 
 def main():
     global array
-    #print(f'before:', array)
+    print(f'before:', array)
     count = len(array)
 
     global counts
     max_value = max(array)
     radix_count = ceil(log10(max_value + 1))
-    #print(f'{max_value=} {log10(radix_count)=} {radix_count=}')
+    print(f'{max_value=} {log10(radix_count)=} {radix_count=}')
 
     global result
     result = []
@@ -27,14 +27,14 @@ def main():
             counts[v] += 1
             #vis.set_inc_index(div, i)
 
-        #print(f'counts= {counts}')
-        #vis.set_inc_index(div, -1)
+        print(f'counts= {counts}')
+        vis.set_inc_index(div, -1)
         for i in range(9):
             counts[i+1] += counts[i]
-            #vis.draw()
-            #vis.wait(1000)
+            vis.draw()
+            vis.wait(1000)
 
-        #print(f'indices={counts}')
+        print(f'indices={counts}')
 
         result = [None] * count
 
@@ -42,16 +42,16 @@ def main():
             v = array[i] // div % 10
             at = counts[v] - 1
             counts[v] -= 1
-            #vis.set_inc_index(div, i, False)
+            vis.set_inc_index(div, i, False)
             result[at] = array[i]
             #print(f'{i=:2d} {v=:2d} {result=}')
 
-        #vis.result_to_array()
+        vis.result_to_array()
         array = result
         result = []
         div *= 10
 
-    #print('after :', array)
+    print('after :', array)
 '''
 count=100    elapsed=0.000
 count=1000   elapsed=0.002
@@ -83,21 +83,6 @@ count=10000000 elapsed=47.878
 '''
 if __name__=='__main__':
     seed('HelloCountSort')
-    counts = [1000000, 2000000, 3000000, 4000000, 5000000, 10000000]
-    for count in counts:
-        startedOn = time()
-        array = list(map(lambda x: randint(1, count), range(count)))
-        elapsed = time() - startedOn
-        print(f'Creating List: {count=:<6d} {elapsed=:.3f}')
-        #shuffle(array)
-        #print(f'before:', array)
-        startedOn = time()
-        main()
-        elapsed = time() - startedOn
-        #print(f'after :', array)
-        print(f'{count=:<6d} {elapsed=:.3f}')
-    exit()
-
     vis = Visualizer('Radix Sort: LSD')
     while True:
         kind = 100000
