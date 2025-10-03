@@ -19,7 +19,7 @@ def mergeSort(left, right):
             if array[left] > array[right]:
                 #vis.swap(left, right
                 array[left], array[right] = array[right], array[left]
-                return
+            return
     mid = (left + right) // 2
     #vis.push(left, mid, right)
     mergeSort(left, mid)
@@ -62,29 +62,29 @@ def merge(left, right, end):
 
         # vis.erase_merged()
 
-''' 성능 측정
-count=100    elapsed=0.000 0.000 0.000
-count=1000   elapsed=0.002 0.001 0.001
-count=2000   elapsed=0.003 0.004 0.003
-count=3000   elapsed=0.005 0.005 0.004
-count=4000   elapsed=0.007 0.008 0.007
-count=5000   elapsed=0.022 0.010 0.010
-count=6000   elapsed=0.026 0.009 0.010
-count=7000   elapsed=0.023 0.011 0.012
-count=8000   elapsed=0.029 0.013 0.012
-count=9000   elapsed=0.020 0.015 0.014
-count=10000  elapsed=0.032 0.019 0.016
-count=15000  elapsed=0.048 0.025 0.025
-count=20000  elapsed=0.074 0.051 0.033
-count=30000  elapsed=0.103 0.079 0.083
-count=40000  elapsed=0.133 0.117 0.078
-count=50000  elapsed=0.175 0.143 0.109
-count=100000 elapsed=0.366 0.272 0.236
-count=200000 elapsed=0.688 0.691 0.499
-count=300000 elapsed=0.960 0.821 0.773
-count=400000 elapsed=1.552 1.197 1.007
-count=500000 elapsed=1.985 1.374 1.546
-count=1000000 elapsed=4.284 3.283 3.573
+''' 성능 측정          orig slice 2only bugfx
+count=100    elapsed=0.000 0.000 0.000 0.000
+count=1000   elapsed=0.002 0.001 0.001 0.001
+count=2000   elapsed=0.003 0.004 0.003 0.003
+count=3000   elapsed=0.005 0.005 0.004 0.005
+count=4000   elapsed=0.007 0.008 0.007 0.006
+count=5000   elapsed=0.022 0.010 0.010 0.010
+count=6000   elapsed=0.026 0.009 0.010 0.011
+count=7000   elapsed=0.023 0.011 0.012 0.012
+count=8000   elapsed=0.029 0.013 0.012 0.013
+count=9000   elapsed=0.020 0.015 0.014 0.015
+count=10000  elapsed=0.032 0.019 0.016 0.020
+count=15000  elapsed=0.048 0.025 0.025 0.029
+count=20000  elapsed=0.074 0.051 0.033 0.046
+count=30000  elapsed=0.103 0.079 0.083 0.103
+count=40000  elapsed=0.133 0.117 0.078 0.115
+count=50000  elapsed=0.175 0.143 0.109 0.279
+count=100000 elapsed=0.366 0.272 0.236 0.342
+count=200000 elapsed=0.688 0.691 0.499 0.616
+count=300000 elapsed=0.960 0.821 0.773 0.849
+count=400000 elapsed=1.552 1.197 1.007 1.255
+count=500000 elapsed=1.985 1.374 1.546 1.714
+count=1000000 elapsed=4.284 3.283 3.573 3.237
 '''
 
 if __name__ == '__main__':
