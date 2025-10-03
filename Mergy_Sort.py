@@ -46,35 +46,38 @@ def merge(left, right, end):
 
     #vis.end_merge()
 
-    l = left
-    for n in merged:
-        array[l] = n
-        l += 1
+    array[left:end+1] = merged
+
+    #l = left
+    #for n in merged:
+        #array[l] = n
+        #l += 1
+
         # vis.erase_merged()
 
 ''' 성능 측정
-count=100    elapsed=0.000
-count=1000   elapsed=0.002
-count=2000   elapsed=0.003
-count=3000   elapsed=0.005
-count=4000   elapsed=0.007
-count=5000   elapsed=0.022
-count=6000   elapsed=0.026
-count=7000   elapsed=0.023
-count=8000   elapsed=0.029
-count=9000   elapsed=0.020
-count=10000  elapsed=0.032
-count=15000  elapsed=0.048
-count=20000  elapsed=0.074
-count=30000  elapsed=0.103
-count=40000  elapsed=0.133
-count=50000  elapsed=0.175
-count=100000 elapsed=0.366
-count=200000 elapsed=0.688
-count=300000 elapsed=0.960
-count=400000 elapsed=1.552
-count=500000 elapsed=1.985
-count=1000000 elapsed=4.284
+count=100    elapsed=0.000 0.000
+count=1000   elapsed=0.002 0.001
+count=2000   elapsed=0.003 0.004
+count=3000   elapsed=0.005 0.005
+count=4000   elapsed=0.007 0.008
+count=5000   elapsed=0.022 0.010
+count=6000   elapsed=0.026 0.009
+count=7000   elapsed=0.023 0.011
+count=8000   elapsed=0.029 0.013
+count=9000   elapsed=0.020 0.015
+count=10000  elapsed=0.032 0.019
+count=15000  elapsed=0.048 0.025
+count=20000  elapsed=0.074 0.051
+count=30000  elapsed=0.103 0.079
+count=40000  elapsed=0.133 0.117
+count=50000  elapsed=0.175 0.143
+count=100000 elapsed=0.366 0.272
+count=200000 elapsed=0.688 0.691
+count=300000 elapsed=0.960 0.821
+count=400000 elapsed=1.552 1.197
+count=500000 elapsed=1.985 1.374
+count=1000000 elapsed=4.284 3.283
 '''
 
 if __name__ == '__main__':
