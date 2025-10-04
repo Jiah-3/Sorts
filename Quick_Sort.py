@@ -10,7 +10,8 @@ def main():
     count = len(array)
 
     vis.push(0, count-1)
-    partition(0, count-1)
+    pivot = partition(0, count-1)
+    vis.set_pivot(pivot)
 
     print('after :', array)
 
@@ -52,7 +53,6 @@ def partition(left, right):
         array[p], array[q] = array[q], array[p]
 
 
-
     # 이 코드는 partition() 함수의 Loop 를 모두 빠져 나온 후에 실행되는 영역이다
     # pivot 값의 위치를 확정시킨다
     # pivot 값은 왼쪽 그룹 중에 가장 큰 값이므로 q 위치로 옮긴다
@@ -60,6 +60,8 @@ def partition(left, right):
     if left != q:
         vis.swap(left, q, True)
         array[left], array[q] = array[q], array[left]
+
+    return q
 
 if __name__ == '__main__':
     seed('Hello')
