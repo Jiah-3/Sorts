@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7741b2f-801c-4357-98eb-2523e204dea0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Quick_Sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quick_Sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Quick_Sort.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,29 +31,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.Count_Sort.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Heap_Sort.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Insertion_Sort.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Mergy_Sort.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Radix_Sort_LSD.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Radix_Sort_MSD.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Selection_Sort.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Shell_sort.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bubble_sort.executor&quot;: &quot;Run&quot;,
-    &quot;Python.data_nearly_sorted_a_lot.executor&quot;: &quot;Run&quot;,
-    &quot;Python.hw_02_14_sort_2024184004.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kimch/OneDrive/바탕 화면/2DGP/Sorts&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.Count_Sort.executor": "Run",
+    "Python.Heap_Sort.executor": "Run",
+    "Python.Insertion_Sort.executor": "Run",
+    "Python.Mergy_Sort.executor": "Run",
+    "Python.Quick_Sort.executor": "Run",
+    "Python.Radix_Sort_LSD.executor": "Run",
+    "Python.Radix_Sort_MSD.executor": "Run",
+    "Python.Selection_Sort.executor": "Run",
+    "Python.Shell_sort.executor": "Run",
+    "Python.bubble_sort.executor": "Run",
+    "Python.data_nearly_sorted_a_lot.executor": "Run",
+    "Python.hw_02_14_sort_2024184004.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/kimch/OneDrive/바탕 화면/2DGP/Sorts",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
