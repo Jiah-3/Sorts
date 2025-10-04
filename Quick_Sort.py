@@ -7,6 +7,7 @@ def main():
     #print('before:', array)
     count = len(array)
     quicksort(0, count-1)
+    insertionsort(0, count-1)
 
     #print('after :', array)
 
@@ -14,7 +15,7 @@ def quicksort(left, right):
     #if left == right: vis.fix(left)
     if left >= right: return
     if right < left + 4:
-        insertionsort(left, right)
+        #insertionsort(left, right)
         return
     #vis.push(left, right)
     pivot = partition(left, right)
