@@ -6,19 +6,41 @@ from time import time
 from random import randint, seed, shuffle
 
 def main():
-  print('before:', array)
-  count = len(array)
+    print('before:', array)
+    count = len(array)
 
-  print('after :', array)
+    vis.push(0, count-1)
+    partition(0, count-1)
+
+    print('after :', array)
+
+def partition(left, right):
+
+    pi = left
+    pivot = array[pi]
+
+    p, q = left, right +1
+
+    if True:
+        while True:
+            p +=1
+            vis.set_p(p)
+            if q < p: break
+            if p <= right: vis.compare(pi, p)
+            if p> right or array[p] > pivot: break
+            
+        vis.set_left(p)
+        vis.set_right(q)
+
 
 if __name__ == '__main__':
-  seed('Hello')
-  vis = Visualizer('Quick Sort')
-  while True:
-    count = randint(20, 40)
-    array = [ randint(1, 99) for _ in range(count) ]
-    vis.setup(vis.get_main_module())
-    main()
-    vis.draw()
-    again = vis.end()
-    if not again: break
+    seed('Hello')
+    vis = Visualizer('Quick Sort')
+    while True:
+        count = randint(20, 40)
+        array = [ randint(1, 99) for _ in range(count) ]
+        vis.setup(vis.get_main_module())
+        main()
+        vis.draw()
+        again = vis.end()
+        if not again: break
