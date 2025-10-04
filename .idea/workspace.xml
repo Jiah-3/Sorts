@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7741b2f-801c-4357-98eb-2523e204dea0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Quick_Sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Quick_Sort.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,5 +83,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="data_unsorted, data_unsorted_a_lot 생성" />
     <option name="LAST_COMMIT_MESSAGE" value="data_unsorted, data_unsorted_a_lot 생성" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Quick_Sort.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
