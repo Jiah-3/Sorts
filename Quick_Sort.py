@@ -14,15 +14,9 @@ def main():
 def quicksort(left, right):
     if left == right: vis.fix(left)
     if left >= right: return
-    if right == left + 1:
-        #vis.compare(left, right)
-        if array[left] > array[right]:
-            #vis.swap(left, right)
-            array[left], array[right] = array[right], array[left]
+    if right < left + 4:
+        insertionsort(left, right)
         return
-    #if right < left + 4:
-        #insertionsort(left, right)
-        #return
     vis.push(left, right)
     pivot = partition(left, right)
     vis.set_pivot(pivot)
