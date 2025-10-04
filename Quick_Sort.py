@@ -38,8 +38,12 @@ def insertionsort(left, right):
 
 def partition(left, right):
 
-    pi = left
+    pi = randint(left, right)
     pivot = array[pi]
+
+    vis.compare(left, pi)
+    vis.swap(left, pi)
+    array[left], array[pi] = array[pi], array[left]
 
     p, q = left, right +1
 
@@ -48,7 +52,7 @@ def partition(left, right):
             p +=1
             vis.set_p(p)
             if q < p: break
-            if p <= right: vis.compare(pi, p)
+            if p <= right: vis.compare(left, p)
             if p> right or array[p] > pivot: break
 
 
@@ -58,7 +62,7 @@ def partition(left, right):
             q -=1
             vis.set_q(q)
             if q < p: break
-            if q >= left: vis.compare(pi, q)
+            if q >= left: vis.compare(left, q)
             if q < left or array[q] < pivot: break
 
 
