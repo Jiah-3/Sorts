@@ -13,6 +13,12 @@ def main():
 def quicksort(left, right):
     #if left == right: vis.fix(left)
     if left >= right: return
+    if right == left + 1:
+        # vis.compare(left, right)
+        if array[left] > array[right]:
+            # vis.swap(left, right)
+            array[left], array[right] = array[right], array[left]
+        return
     #vis.push(left, right)
     pivot = partition(left, right)
     #vis.set_pivot(pivot)
@@ -70,32 +76,33 @@ def partition(left, right):
     return q
 
 '''성능 측정
-count=100     elapsed= 0.000 creation= 0.00
-count=1000    elapsed= 0.001 creation= 0.00
-count=2000    elapsed= 0.003 creation= 0.00
-count=3000    elapsed= 0.004 creation= 0.00
-count=4000    elapsed= 0.006 creation= 0.00
-count=5000    elapsed= 0.007 creation= 0.00
-count=6000    elapsed= 0.009 creation= 0.00
-count=7000    elapsed= 0.022 creation= 0.01
-count=8000    elapsed= 0.017 creation= 0.01
-count=9000    elapsed= 0.026 creation= 0.01
-count=10000   elapsed= 0.029 creation= 0.01
-count=15000   elapsed= 0.025 creation= 0.02
-count=20000   elapsed= 0.042 creation= 0.01
-count=30000   elapsed= 0.063 creation= 0.03
-count=40000   elapsed= 0.148 creation= 0.02
-count=50000   elapsed= 0.147 creation= 0.03
-count=100000  elapsed= 0.256 creation= 0.06
-count=200000  elapsed= 0.600 creation= 0.18
-count=300000  elapsed= 0.802 creation= 0.19
-count=400000  elapsed= 1.125 creation= 0.25
-count=500000  elapsed= 1.645 creation= 0.31
-count=1000000 elapsed= 3.360 creation= 0.60
-count=2000000 elapsed= 8.011 creation= 1.35
-count=3000000 elapsed=12.169 creation= 1.96
-count=4000000 elapsed=15.897 creation= 2.48
-count=5000000 elapsed=20.592 creation= 3.55
+#Quick Sort           Normal  2-swap
+count=100     elapsed= 0.000  0.000
+count=1000    elapsed= 0.001  0.001
+count=2000    elapsed= 0.003  0.003
+count=3000    elapsed= 0.004  0.003
+count=4000    elapsed= 0.006  0.005
+count=5000    elapsed= 0.007  0.006
+count=6000    elapsed= 0.009  0.006
+count=7000    elapsed= 0.022  0.007
+count=8000    elapsed= 0.017  0.009
+count=9000    elapsed= 0.026  0.010
+count=10000   elapsed= 0.029  0.013
+count=15000   elapsed= 0.025  0.017
+count=20000   elapsed= 0.042  0.023
+count=30000   elapsed= 0.063  0.039
+count=40000   elapsed= 0.148  0.090
+count=50000   elapsed= 0.147  0.079
+count=100000  elapsed= 0.256  0.203
+count=200000  elapsed= 0.600  0.378
+count=300000  elapsed= 0.802  0.623
+count=400000  elapsed= 1.125  0.852
+count=500000  elapsed= 1.645  1.093
+count=1000000 elapsed= 3.360  2.297
+count=2000000 elapsed= 8.011  6.157
+count=3000000 elapsed=12.169  9.965
+count=4000000 elapsed=15.897  13.828
+count=5000000 elapsed=20.592  16.930
 '''
 if __name__ == '__main__':
     seed('Hello')
