@@ -47,3 +47,12 @@ with open('data_knapsack.json') as f:
       heappush(nodes, node)
 
   print(nodes)
+
+  def printTree(node, indent=0):
+      print(f'{" " * indent}{node.freq}/{node.ch}')
+      if node.left is not None:
+          printTree(node.left, indent + 2)
+      if node.right is not None:
+          printTree(node.right, indent + 2)
+
+  printTree(nodes[0])
