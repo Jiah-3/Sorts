@@ -39,3 +39,8 @@ with open('data_knapsack.json') as f:
       heappush(nodes, node)
 
   print(nodes)
+
+  while nodes:
+      node = heappop(nodes)
+      print(node, end=', ')
+  print()
