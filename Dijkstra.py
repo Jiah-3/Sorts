@@ -53,10 +53,10 @@ def main():
       adjacents = graph[ci]
       for adj in adjacents:
           if adj in completed: continue
-          weight = adjacents[adj]
+          weight = w + adjacents[adj]
           if adj in weights:  # adj 에 대해 가중치가 저장되어 있다면
-              w = weights[adj][0]  # 가중치를 가져온다
-              if weight < w:  # 가져온 것보다 비용이 적다면
+              prev_w = weights[adj][0]  # 가중치를 가져온다
+              if weight < prev_w:  # 가져온 것보다 비용이 적다면
                   weights[adj] = weight, ci  # 교체한다
                   vis.update(weight, adj, ci)
               else:
@@ -68,7 +68,7 @@ def main():
       if len(mst) >= n_cities - 1: break
 
 if __name__ == '__main__':
-  vis = Visualizer('Minimum Spanning Tree - Prim')
+  vis = Visualizer('Dijkstra')
   idx = 0
   while True:
     cities, edges = dsc.cities, dsc.edges
